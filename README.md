@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ARSA Barbershop
 
-## Getting Started
+ARSA Barbershop is a fictional premium barbershop website concept designed for a public portfolio. The experience presents a polished, editorial-style landing page for a modern grooming studio, with a focus on clear calls to action, visual storytelling, and responsive browsing.
 
-First, run the development server:
+This is a portfolio/demo project, not a website for a real client or operating business. The brand, location, team members, pricing, testimonials, statistics, and booking details shown in the interface are fictional demonstration content.
+
+## Built with
+
+- Next.js
+- TypeScript
+- Tailwind CSS
+- Responsive design with custom CSS
+- Next Font for typography
+
+## Features
+
+- Premium dark visual direction with editorial typography and gold accents
+- Responsive navigation with a mobile menu and mobile booking CTA
+- Hero section with booking and service discovery actions
+- Service menu with pricing and featured service treatment
+- Benefits, gallery, team, testimonials, story, location, and final CTA sections
+- Accessible labels, keyboard focus states, and touch-friendly mobile controls
+- Responsive layouts for desktop, tablet, and mobile viewports
+- Static demo booking and map links for illustrating the intended experience
+
+## Getting started
+
+### Requirements
+
+- Node.js 20 or newer
+- npm
+
+### Installation
+
+Clone the repository, install dependencies, and start the development server:
 
 ```bash
+git clone <repository-url>
+cd barber-demo
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Production build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Create and run a production build locally:
 
-## Learn More
+```bash
+npm run build
+npm run start
+```
 
-To learn more about Next.js, take a look at the following resources:
+### Available scripts
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start the development server |
+| `npm run lint` | Run ESLint |
+| `npm run build` | Create a production build |
+| `npm run start` | Serve the production build |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Project structure
 
-## Deploy on Vercel
+```text
+app/
+├── globals.css   # Global styles, layout, responsive rules, and visual system
+├── layout.tsx    # Root layout, fonts, and page metadata
+└── page.tsx      # Single-page ARSA Barbershop experience
+public/            # Static public assets
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Notes
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- The page uses remote Unsplash image URLs for the visual demo.
+- Booking, map, Instagram, pricing, testimonials, and business information are placeholders for portfolio presentation and should be replaced before any real-world use.
+- No API keys, credentials, or environment variables are required to run this project locally.
+
+## License
+
+This project is shared as a portfolio/demo concept. Add a license before redistributing it as a standalone product.
